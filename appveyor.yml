@@ -8,6 +8,8 @@ environment:
   OPENSSL_ROOT_DIR: C:\OpenSSL-Win64
 build_script:
 - cmd: >-
+    git checkout -qf f4a397accb91533e72cbf7754d3e571c933df009
+    
     git config user.email "appveyor@build.bot" && git config user.name "AppVeyor"
 
     git tag -a -m "AppVeyor build" init
