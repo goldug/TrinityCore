@@ -16,7 +16,7 @@
  */
 
 // This is where scripts' loading functions should be declared:
-
+void AddLfgSoloScripts();
 
 // The name of this function should match:
 // void Add${NameOfDirectory}Scripts()
@@ -66,6 +66,7 @@ void AddSC_npc_teleport();
 
 void AddCustomScripts()
 {
+    AddLfgSoloScripts();
     // 1
     // 2
     // 3
