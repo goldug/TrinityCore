@@ -8,6 +8,16 @@ environment:
   OPENSSL_ROOT_DIR: C:\OpenSSL-Win64
 build_script:
 - cmd: >-
+    git remote add TrinityCoreCustomChanges https://github.com/TrinityCore/TrinityCoreCustomChanges.git
+    
+    git fetch TrinityCoreCustomChanges
+    
+    git checkout -b TrinityCoreCustomChanges/3.3.5-base_patch
+        
+    git checkout -b TrinityCoreCustomChanges/3.3.5-tele_npc_3
+        
+    git checkout -b TrinityCoreCustomChanges/3.3.5-lfgsolo
+    
     git config user.email "appveyor@build.bot" && git config user.name "AppVeyor"
 
     git tag -a -m "AppVeyor build" init
