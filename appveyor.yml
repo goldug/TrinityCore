@@ -11,9 +11,7 @@ build_script:
     git config user.email "appveyor@build.bot" && git config user.name "AppVeyor"
 
     git tag -a -m "AppVeyor build" init
-    
-    wget https://github.com/trickerer/Trinity-Bots/raw/master/last/NPCBots.patch
-    
+        
     patch NPCBots.patch
 
     md build && cd build
