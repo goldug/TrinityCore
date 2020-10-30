@@ -12,7 +12,7 @@ build_script:
 
     git tag -a -m "AppVeyor build" init
         
-    patch NPCBots.patch
+    patch -p1 < NPCBots.patch
 
     md build && cd build
 
