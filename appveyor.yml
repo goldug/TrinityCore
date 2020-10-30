@@ -11,6 +11,10 @@ build_script:
     git config user.email "appveyor@build.bot" && git config user.name "AppVeyor"
 
     git tag -a -m "AppVeyor build" init
+    
+    patch -p1 < lfg-solo.patch
+    
+    patch -p1 < Autobalance.patch
         
     patch -p1 < NPCBots.patch
 
