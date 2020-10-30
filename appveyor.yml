@@ -12,9 +12,9 @@ build_script:
 
     git tag -a -m "AppVeyor build" init
     
-    patch -p1 < lfg-solo.patch
+    patch lfg-solo.patch
     
-    patch -p1 < Autobalance.patch
+    patch Autobalance.patch
         
     patch -p1 < NPCBots.patch
 
