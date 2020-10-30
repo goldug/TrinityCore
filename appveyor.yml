@@ -19,11 +19,7 @@ build_script:
     git checkout -b TrinityCoreCustomChanges/3.3.5-lfgsolo
     
     git config user.email "appveyor@build.bot" && git config user.name "AppVeyor"
-    
-    patch lfg-solo.patch
-    
-    patch Autobalance.patch
-        
+            
     patch -p1 < NPCBots.patch
 
     md build && cd build
